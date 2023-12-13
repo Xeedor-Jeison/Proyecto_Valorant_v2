@@ -104,7 +104,7 @@ botonMaps.addEventListener("click", mostrarDataMapas)
 
 function mostrarDataMapas() {
 
-    cabecera.classList.remove("d-none")
+    // cabecera.classList.remove("d-none")
     divCheckboxAgents.classList.add("d-none")
     divCheckboxMapas.classList.remove("d-none")
     cardsMaps.classList.remove("d-none")
@@ -116,7 +116,7 @@ let botonTabla = document.getElementById("botonTable")
 botonTabla.addEventListener("click", mostrarDataTable)
 
 function mostrarDataTable() {
-    cabecera.classList.remove("d-none")
+    // cabecera.classList.remove("d-none")
     divCheckboxAgents.classList.add("d-none")
     divCheckboxMapas.classList.add("d-none")
     sectionTable.classList.remove("d-none")

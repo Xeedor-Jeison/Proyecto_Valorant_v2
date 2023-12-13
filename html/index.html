@@ -53,20 +53,21 @@
             <div class="d-flex justify-content-around  align-items-center flex-wrap mt-5 ms-4">
                 {{superFiltroAgents}}
 
-                <div class=" fs-5 d-flex flex-wrap ">
+                <div class=" fs-5 d-flex flex-wrap">
                     <div v-for="rol in roles" class="form-check form-switch m-2">
-                        <input v-model="categoriasSeleccionadasAgents" class="form-check-input border-white bg-danger" type="checkbox" role="switch"
-                            :id="rol" :value="rol">
-                        <label  class="form-check-label text-white" :for="rol">{{rol}}</label>
+                        <input v-model="categoriasSeleccionadasAgents" class="form-check-input border-white bg-danger"
+                            type="checkbox" role="switch" :id="rol" :value="rol">
+                        <label class="form-check-label text-white" :for="rol">{{rol}}</label>
                     </div>
                 </div>
 
 
                 <div>
-                    <form class="d-flex " role="search">
-                        <input v-model="textoBuscarAgents" id="inputBusquedad" class="form-control me-1 border border-danger" type="search"
-                            placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger bg-danger rounded-5" type="submit">Search</button>
+                    <form class="d-flex" role="search">
+                        <input v-model="textoBuscarAgents" id="inputBusquedad"
+                            class="form-control me-1 border border-danger" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-danger w-50 bg-danger rounded-5" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -77,17 +78,18 @@
 
                 <div class=" fs-5 d-flex flex-wrap ">
                     <div v-for="map in maps" class="form-check form-switch m-2">
-                        <input v-model="categoriasSeleccionadasMapas" class="form-check-input border-white bg-danger" type="checkbox" role="switch"
-                            :id="map.displayName" :value="map.displayName">
-                        <label  class="form-check-label text-white" :for="map.displayName">{{map.displayName}}</label>
+                        <input v-model="categoriasSeleccionadasMapas" class="form-check-input border-white bg-danger"
+                            type="checkbox" role="switch" :id="map.displayName" :value="map.displayName">
+                        <label class="form-check-label text-white" :for="map.displayName">{{map.displayName}}</label>
                     </div>
                 </div>
 
 
                 <div>
                     <form class="d-flex " role="search">
-                        <input v-model="textoBuscarMapas" id="inputBusquedad" class="form-control me-1 border border-danger" type="search"
-                            placeholder="Search" aria-label="Search">
+                        <input v-model="textoBuscarMapas" id="inputBusquedad"
+                            class="form-control me-1 border border-danger" type="search" placeholder="Search"
+                            aria-label="Search">
                         <button class="btn btn-outline-danger bg-danger rounded-5" type="submit">Search</button>
                     </form>
                 </div>
@@ -148,7 +150,7 @@
             </div>
 
         </section>
-        <section id="sectionTable" class=" m-5 d-none" >
+        <section id="sectionTable" class=" m-5 d-none">
             <table class="table table-hover table-dark">
                 <tbody>
                     <tr class="table-danger">
@@ -194,31 +196,32 @@
 
         </section>
 
-        
+
 
 
 
     </main>
-    <footer id="footer" class=" d-flex justify-content-around  align-items-center flex-wrap d-none ">
+    <footer id="footer" class="d-none">
+        <div class="d-flex justify-content-around  align-items-center flex-wrap pruebaFooter ">
+            <div class=" d-flex justify-content-center align-items-center">
 
-        <div class=" d-flex justify-content-center align-items-center">
-
-            <a class="navbar-brand m-3 " href="https://playvalorant.com/es-mx/">
-                <img src="./imagenes/logoValorantMini.png" alt="Logo Valorant" width="50" height="40"
-                    class="d-inline-block align-text-top">
-            </a>
-            <a class="navbar-brand m-3 d-flex ju" href="https://www.strats.gg/valorant">
-                <img src="./imagenes/strats_gg_logo.jpg" alt="logo Strats gg" width="50" height="40"
-                    class="d-inline-block align-text-top">
-            </a>
-        </div>
-        <div>
-            <ul class="names d-flex fw-bold me-4 ">
-                <ol class=" text-white ">Jeison Ramos</ol>
-                <ol class=" text-white ">Fernando Cardona</ol>
-                <ol class=" text-white ">Karen Zarate</ol>
-                <ol class=" text-white ">Neider Nuñez</ol>
-            </ul>
+                <a class="navbar-brand  " href="https://playvalorant.com/es-mx/">
+                    <img src="./imagenes/logoValorantMini.png" alt="Logo Valorant"
+                        class="d-inline-block styleBotonFooter">
+                </a>
+                <a class="navbar-brand  d-flex ju" href="https://www.strats.gg/valorant">
+                    <img src="./imagenes/strats_gg_logo.jpg" alt="logo Strats gg"
+                        class="d-inline-block styleBotonFooter">
+                </a>
+            </div>
+            <div>
+                <ul class="names d-flex fw-bold me-4 ">
+                    <ol class=" text-white ">Jeison Ramos</ol>
+                    <ol class=" text-white ">Fernando Cardona</ol>
+                    <ol class=" text-white ">Karen Zarate</ol>
+                    <ol class=" text-white ">Neider Nuñez</ol>
+                </ul>
+            </div>
         </div>
 
     </footer>
